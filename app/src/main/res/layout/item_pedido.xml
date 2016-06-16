@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/identificacao_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coca Cola 2l"
+        android:textColor="#82552e"
+        android:typeface="sans"
+        android:textSize="22dip"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image_status" />
+
+    <!-- Artist Name -->
+
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/valor_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="R$ 54,00"
+        android:layout_marginRight="5dip"
+        android:textSize="20dip"
+        android:textColor="#2d5931"
+        android:textStyle="bold"
+        android:layout_below="@+id/image_status"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Rightend Arrow -->
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/image_status"
+        android:layout_width="50dip"
+        android:layout_height="30dip"
+        android:src="@drawable/livre"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quant: 10"
+        android:id="@+id/quantidade"
+        android:layout_alignBottom="@+id/identificacao_produto"
+        android:layout_alignEnd="@+id/valor_total" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 5,40"
+        android:id="@+id/preco"
+        android:layout_below="@+id/quantidade"
+        android:layout_alignStart="@+id/identificacao_produto"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
